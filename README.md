@@ -63,12 +63,10 @@ Valid
 ```
 ##### Inválido
 ```sh
-GioMovies.dtd:19: parser error : xmlParseElementDecl: 'EMPTY', 'ANY' or '(' expected
-<!ELEMENT resourceRef bug>
-                      ^
-GioMovies.dtd:19: parser error : Content error in the external subset
-<!ELEMENT resourceRef bug>
-                      ^
+==> GioMovies.xml:0: validity error : Element topic does not carry attribute id
+GioMovies.xml:0: validity error : No declaration for attribute test of element topic
+
+Invalid
 ```
 
 ### Schema Validation
