@@ -1,7 +1,5 @@
 # Seminário de Linguagens de Marcação Extensíveis
 
-[TOC]
-
 ## Instalação
 
 ### Perl
