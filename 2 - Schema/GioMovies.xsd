@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2018 rel. 2 sp1 (http://www.altova.com) by Altova XMLSpy 2019 Enterprise XML Editor (Universidade Federal de Santa Maria) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" elementFormDefault="qualified" attributeFormDefault="unqualified" vc:minVersion="1.1">
+	<xs:element name="topicMap">
+		<xs:annotation>
+			<xs:documentation>Comment describing your root element</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="topic" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="instanceOf" type="instanceOfType" minOccurs="0"/>
+							<xs:element name="subjectIdentity" minOccurs="0">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="subjectIndicatorRef" type="refType"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="baseName" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:choice maxOccurs="unbounded">
+										<xs:element name="baseNameString" type="xs:string"/>
+										<xs:element name="scope" type="scopeType"/>
+									</xs:choice>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="occurrence" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:choice maxOccurs="unbounded">
+										<xs:element name="instanceOf" type="instanceOfType"/>
+										<xs:element name="resourceRef" type="refType"/>
+										<xs:element name="scope" type="scopeType"/>
+										<xs:element name="resourceData" type="xs:string"/>
+									</xs:choice>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="id" type="xs:ID" use="required"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="association" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="instanceOf" type="instanceOfType"/>
+							<xs:element name="member" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="topicRef" type="refType"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="scopeType">
+		<xs:sequence>
+			<xs:element name="topicRef" type="refType"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="refType">
+		<xs:attribute name="href" type="xs:string" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="instanceOfType">
+		<xs:sequence>
+			<xs:element name="topicRef" type="refType"/>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>

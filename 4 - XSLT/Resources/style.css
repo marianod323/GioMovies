@@ -1,0 +1,172 @@
+*{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+ul{
+    list-style: none;
+}
+ul{
+    line-height: 14px;
+}
+a:hover{
+    text-decoration: none !important;
+}
+nav{
+    position: fixed !important;
+    height: 60px;
+    width: 100%;
+    background-color: #1a1a1a;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+    z-index: 100;
+}
+nav a{
+    color: white;
+    transition: 0.5s;
+}
+nav a:hover{
+    color: rgb(10, 160, 230);
+}
+nav #nav-brand{
+    font-weight: bold;
+    font-size: 32px;
+}
+nav span{
+    color: white !important;
+}
+body{
+    background-image: url(img/libre.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: right;
+    background-position-y: bottom;
+    background-size: 15%;
+}
+#filmsHeader{
+    background-image: url(img/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-top: 30px;
+    margin: 0;
+    height: 300px;
+    width: 100%;
+    display: table;
+    overflow: hidden;
+}
+#filmsHeader h1{
+    font-size: 80px;
+    text-align: center;
+    -webkit-text-stroke: 2px white;
+    color: transparent;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: Comic Sans MS;
+    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    animation: rainbow_animation 6s ease-in-out infinite;
+    background-size: 50% 100%;
+}
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}
+#headerDivider{
+    background: red;
+    background: -webkit-linear-gradient(left, red, orange , yellow, green, cyan, blue, violet); 
+    background: -o-linear-gradient(left, red, orange, yellow, green, cyan, blue, violet); 
+    background: -moz-linear-gradient(left, red, orange, yellow, green, cyan, blue, violet);
+    background: linear-gradient(left, red, orange , yellow, green, cyan, blue, violet);
+    height: 5px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+footer{
+    background-color: #1a1a1a;
+    margin: 0;
+    padding: 0;
+    color: #ffffffbd;
+    height: 70px;
+}
+footer p{
+    margin: 0;
+    padding-left: 50px;
+}
+#disciplina{
+    font-style: italic;
+    padding-top: 10px;
+}
+#autores{
+    padding-bottom: 10px;
+}
+.list{
+    padding: 0 0 100px 0;
+    text-align: center;
+    min-height: 80vh;
+}
+.list h2, .list h1{
+    font-size: 48px;
+    padding: 20px 0;
+    margin: 0;
+}
+.list ul{
+    margin: 0 !important;
+    padding: 0;
+}
+#movieDescription{
+    margin: 0 100px;
+    padding: 50px 0;
+}
+#movieDescription h1{
+    font-weight: bold;
+    font-size: 48px;
+}
+#movieDescription h3{
+    color: white;
+    position: relative;
+    margin-top: 20px;
+    padding: 5px 10px 5px 10px;
+    display: block;
+    width: fit-content;
+}
+#movieDescription h3:nth-child(3){
+    margin-top: 0px !important;
+}
+#movieDescription h3:after{
+    content: "";
+    position: absolute;
+    background-color: #1a1a1a;
+    height: 100%;
+    width: 100%;
+    -webkit-transform: skewX(-15deg);
+    transform: skewX(-15deg);
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+#movieDescription h5, #movieDescription p{
+    padding-left: 20px;
+    padding-bottom: 20px;
+    color: #707070;
+}
+#movieDescription a{
+    padding-left: 20px;
+}
+#movieDescription p{
+    text-align: justify;
+    padding-right: 25%;
+}
+#engTitle{
+    color: #707070;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 32px;
+    padding-bottom: 20px;
+}

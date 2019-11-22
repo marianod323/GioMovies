@@ -1,0 +1,10 @@
+<baseNameString>100 Garotas</baseNameString>
+<baseNameString>28 Dias</baseNameString>
+<baseNameString>A Fuga das Galinhas</baseNameString>
+<baseNameString>Do Que as Mulheres Gostam</baseNameString>
+<baseNameString>Endiabrado</baseNameString>
+<baseNameString>Gladiador</baseNameString>
+<baseNameString>Náufrago</baseNameString>
+<baseNameString>O Patriota</baseNameString>
+<baseNameString>Revelação</baseNameString>
+<baseNameString>X-Men - O Filme</baseNameString>

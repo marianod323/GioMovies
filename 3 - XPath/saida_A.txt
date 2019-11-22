@@ -1,0 +1,16 @@
+<baseNameString>Ação</baseNameString>
+<baseNameString>Animação</baseNameString>
+<baseNameString>Aventura</baseNameString>
+<baseNameString>Aventura/FicçãoCientífica</baseNameString>
+<baseNameString>Comédia</baseNameString>
+<baseNameString>ComédiaRomântica</baseNameString>
+<baseNameString>Drama</baseNameString>
+<baseNameString>Épico</baseNameString>
+<baseNameString>Faroeste</baseNameString>
+<baseNameString>FicçãoCientífica</baseNameString>
+<baseNameString>Guerra</baseNameString>
+<baseNameString>Policial</baseNameString>
+<baseNameString>Romance</baseNameString>
+<baseNameString>Suspense</baseNameString>
+<baseNameString>Terror</baseNameString>
+<baseNameString>Thriller</baseNameString>
